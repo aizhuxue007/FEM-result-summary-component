@@ -1,0 +1,157 @@
+/* Reset Spacing on Entire Application */
+*,
+*::before,
+*::after {
+    margin: 0;
+}
+
+:root {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+
+    /* Warning Success Colors */
+    /* light */
+    --light-red: hsla(0, 100%, 67%, 0.15);
+    --orangey-yellow: hsla(39, 100%, 56%, 0.15);
+    --green-teal: hsl(166, 100%, 37%, 0.15);
+    --cobalt-blue: hsla(234, 85%, 45%, 15%);
+
+    /* normal */
+    --text-light-red: hsla(0, 100%, 67%);
+    --text-orangey-yellow: hsla(39, 100%, 56%);
+    --text-cobalt-blue: hsla(234, 85%, 45%, 100%);
+    --text-green-teal: hsl(166, 100%, 37%);
+    
+    /* All Blues Colors */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* !!! HINT !!! */
+    /* Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`. */
+    
+    /* Gradients */
+    
+}
+
+.gradient{
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.red-box {
+    background-color: var(--light-red);
+}
+.yellow-box{
+    background-color: var(--orangey-yellow);
+}
+.blue-box{
+    background-color: var(--cobalt-blue);
+}
+.green-box{
+    background-color: var(--green-teal);
+}
+
+/* text */
+.red-text {
+    color: var(--text-light-red);
+}
+.yellow-text{
+    color: var(--text-orangey-yellow);
+}
+.blue-text{
+    color: var(--text-cobalt-blue);
+}
+.green-text{
+    color: var(--text-green-teal);
+}
+
+.bold{font-weight: 500;}
+.bolder{font-weight: 700;}
+.boldest{font-weight: 800;}
+
+.hero {
+    color: var(--white);
+    border-radius: 0 0 25px 25px;
+}
+
+.hero-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+.hero-circle {
+    width: 75px;
+    height: 75px;
+    padding: 2em;
+    line-height: 200%;
+    background: linear-gradient(to top, var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 100%;
+    margin: 0 auto 1em auto;
+}
+
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.summary {
+    margin: 1em 0;
+}
+
+.summary-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    margin: 1em 0;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.category-description {
+    display: flex;
+}
+
+.rounded-pill {
+    width: 100%;
+    background-color: var(--dark-gray-blue);
+    color: white;
+    padding: 1em 0;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 1em;
+}
+
+/* Media Query Screen Sizes
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+/* Media Queries */
+/* @media only screen and (min-width: 1440px) {
+    
+} */
