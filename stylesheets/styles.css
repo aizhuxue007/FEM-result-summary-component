@@ -91,6 +91,18 @@
     border-bottom-right-radius: 10px;
 }
 
+.hero h1 {
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.hero p {
+    font-size: 0.75rem;
+    line-height: 1.3em;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
 h1 {
     margin-bottom: 1em;
 }
@@ -104,8 +116,6 @@ h1 {
     border-radius: 100%;
     margin: 0 auto 1em auto;
 }
-
-
 
 .container {
     width: 85%;
@@ -126,7 +136,7 @@ h1 {
 .category {
     display: flex;
     justify-content: space-between;
-    padding: 0.5em;
+    padding: 1.1em;
     border-radius: 10px;
 }
 
@@ -144,6 +154,21 @@ h1 {
     margin-bottom: 1em;
 }
 
+.category-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+.stats-denom {
+    font-weight: 400;
+    color: rgba(11, 11, 11, 0.5)
+}
+
+.stats-bold {
+    font-weight: 700;
+}
+
 /* Media Query Screen Sizes
 
 - Mobile: 375px
@@ -152,6 +177,48 @@ h1 {
 */
 
 /* Media Queries */
-/* @media only screen and (min-width: 1440px) {
-    
-} */
+@media only screen and (min-width: 800px) {
+    .wrapper {
+        height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container {
+        width: 50%;
+        max-width: 500px;
+        display: flex;
+        box-shadow: 12px 6px 19px 4px rgba(49, 89, 168, 0.19);
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+    }
+    .hero.gradient {
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        width: 100%;
+    }
+    .hero-circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-circle h2 {
+        font-size: 3em;
+        font-weight: 400;
+        margin-bottom: 0.35em;
+    }
+    main {
+        width: 100%;
+    }
+    .summary {
+       
+    }
+    .category {
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+    }
+
+}
